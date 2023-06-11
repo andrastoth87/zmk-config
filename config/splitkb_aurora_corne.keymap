@@ -21,7 +21,7 @@
             bindings = <&kp>, <&sk>;
         };
 
-        lqt: global-quick-tap {
+        lht: layer-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
@@ -84,10 +84,10 @@
 // |     |     |     |     |     |     |        |     |     |     |            |                |               |
 //                   |     |HOME |     |        |     |HOME |     |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &kp EQUAL &kp GRAVE &kp LBKT
-   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans     &trans     &trans
-   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans     &trans     &trans
-                     &trans &to 0 &trans          &trans &to 0 &trans
+   &none &none &none &none &none &none          &none &none &none &kp EQUAL &kp GRAVE &kp LBKT
+   &none &none &none &none &none &none          &none &none &none &none     &none     &none
+   &none &none &none &none &none &none          &none &none &none &none     &none     &none
+                     &none &to 0 &none          &none &to 0 &none
                         >;
                 };
         };
