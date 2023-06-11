@@ -48,6 +48,7 @@
                              &kp RALT &to 1 &kp SPACE   &kp RET &to 2 &kp RGUI
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |                                        |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -76,17 +77,17 @@
                         >;
                 };
 
-                                o_layer {
+                o_layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |        |     |     |     |  Ó         |  Ö             |   Ő           |
 // |     |     |     |     |     |     |        |     |     |     |            |                |               |
 // |     |     |     |     |     |     |        |     |     |     |            |                |               |
 //                   |     |HOME |     |        |     |HOME |     |
                         bindings = <
-   &none &none &none &none &none &none          &none &none &none &kp EQUAL &kp GRAVE &kp LBKT
-   &none &none &none &none &none &none          &none &none &none &none                         &none &none
-   &none &none &none &none &none &none          &none &none &none &none                         &none &none
-                     &none &to 0 &none          &none &to 0 &none
+   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &kp EQUAL &kp GRAVE &kp LBKT
+   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans     &trans     &trans
+   &trans &trans &trans &trans &trans &trans          &trans &trans &trans &trans     &trans     &trans
+                     &trans &to 0 &trans          &trans &to 0 &trans
                         >;
                 };
         };
