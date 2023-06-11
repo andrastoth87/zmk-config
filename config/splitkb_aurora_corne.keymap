@@ -20,7 +20,18 @@
             global-quick-tap;
             bindings = <&kp>, <&sk>;
         };
-            };
+
+        lqt: global-quick-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&sl>, <&kp>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -31,7 +42,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
-   &kp TAB              &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB              &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &lqt 3 O   &kp P    &kp BSPC
    &kp LCTRL            &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &gqt CAPSLOCK LSHFT  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                              &kp RALT &to 1 &kp SPACE   &kp RET &to 2 &kp RGUI
@@ -62,6 +73,20 @@
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &trans &to 0   &trans   &trans   &to 1    &trans
+                        >;
+                };
+
+                                o_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |                  |     |     |     |  Ó  |  Ö  |   Ő  |
+// |      |     |     |     |     |     |                  |     |     |     |     |     |      |
+// |      |     |     |     |     |     |                  |     |     |     |     |     |      |
+//                    |     |HOME |     |                  |     |HOME |     |
+                        bindings = <
+   &none &none &none &none &none &none      &none &none &none &kp KP_EQUAL &kp SINGLE_QUOTE &LEFT_BRACKET
+   &none &none &none &none &none &none      &none &none &none &none                         &none &none
+   &none &none &none &none &none &none      &none &none &none &none                         &none &none
+                     &none &to 0 &none      &none &to 0 &none
                         >;
                 };
         };
