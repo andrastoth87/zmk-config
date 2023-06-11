@@ -78,15 +78,15 @@
 
                                 o_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |                  |     |     |     |  Ó  |  Ö  |   Ő  |
-// |      |     |     |     |     |     |                  |     |     |     |     |     |      |
-// |      |     |     |     |     |     |                  |     |     |     |     |     |      |
-//                    |     |HOME |     |                  |     |HOME |     |
+// |     |     |     |     |     |     |        |     |     |     |  Ó         |  Ö             |   Ő           |
+// |     |     |     |     |     |     |        |     |     |     |            |                |               |
+// |     |     |     |     |     |     |        |     |     |     |            |                |               |
+//                   |     |HOME |     |        |     |HOME |     |
                         bindings = <
-   &none &none &none &none &none &none      &none &none &none &kp KP_EQUAL &kp SINGLE_QUOTE &LEFT_BRACKET
-   &none &none &none &none &none &none      &none &none &none &none                         &none &none
-   &none &none &none &none &none &none      &none &none &none &none                         &none &none
-                     &none &to 0 &none      &none &to 0 &none
+   &none &none &none &none &none &none          &none &none &none &kp KP_EQUAL &kp SINGLE_QUOTE &kp LEFT_BRACKET
+   &none &none &none &none &none &none          &none &none &none &none                         &none &none
+   &none &none &none &none &none &none          &none &none &none &none                         &none &none
+                     &none &to 0 &none          &none &to 0 &none
                         >;
                 };
         };
