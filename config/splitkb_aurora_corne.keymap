@@ -83,7 +83,7 @@
 // |     |     |     |     |     |     |        |     |     |     |            |                |               |
 //                   |     |HOME |     |        |     |HOME |     |
                         bindings = <
-   &none &none &none &none &none &none          &none &none &none &kp KP_EQUAL &kp SINGLE_QUOTE &kp LEFT_BRACKET
+   &none &none &none &none &none &none          &none &none &none &kp EQUAL &kp GRAVE &kp LBKT
    &none &none &none &none &none &none          &none &none &none &none                         &none &none
    &none &none &none &none &none &none          &none &none &none &none                         &none &none
                      &none &to 0 &none          &none &to 0 &none
