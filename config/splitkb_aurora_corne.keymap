@@ -95,24 +95,21 @@
         };
 
         sctd: shift_caps_tap_dance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_CAPS_TAP_DANCE";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp CAPSLOCK>, <&sk LSHFT>;
         };
 
         td3: tap_dance_3 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_DANCE_3";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>, <&kp>;
         };
 
         td4: tap_dance_4 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_DANCE_4";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>, <&kp>, <&kp>;
@@ -120,7 +117,6 @@
 
         capi: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
-            label = "I_ACUTE_CAPITAL";
             #binding-cells = <0>;
             bindings = <&kp HU_I_ACUTE>, <&kp HU_I_ACUTE_CAP>;
             mods = <(MOD_LSFT)>;
