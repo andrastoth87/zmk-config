@@ -140,45 +140,7 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mscsym1: tap_dance_miscellaneous_symbols_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_LT>, <&kp HU_GT>, <&kp HU_PRCNT>;
-        };
 
-        mscsym2: tap_dance_miscellaneous_symbols_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_AT>, <&kp HU_AMPS>, <&kp HU_HASH>;
-        };
-
-        mscsym3: tap_dance_miscellaneous_symbols_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_3";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_FSLH>, <&kp HU_BSLH>, <&kp HU_PIPE>;
-        };
-
-        mscsym4: tap_dance_miscellaneous_symbols_4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_4";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_COLON>, <&kp HU_SEMI>;
-        };
-
-        mscsym5: tap_dance_miscellaneous_symbols_5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_5";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_RPAR>, <&kp HU_RBKT>, <&kp HU_RBRC>;
-        };
 
     };
         keymap {
@@ -211,13 +173,6 @@
                         >;
                 };
 
-                miscellaneous_layer {
-                        bindings = <
-   ___  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5             &kp F6    &kp F7      &kp F8   &kp F9   &kp F10  ___
-   ___  xxx     xxx     xxx     xxx     &kp PSCRN          &mscsym1  &mscsym2    &mscsym3  &kp F11  &kp F12  ___
-   ___  xxx     xxx     xxx     xxx     xxx                xxx       xxx         &mscsym4  &mscsym5      xxx      ___
-                        ___     ___     ___                ___       &to MEDNUM  ___
-                        >;
-                };
+
             };
    };
