@@ -95,7 +95,7 @@
         td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
-            #binding-cells = <0>;
+            #binding-cells = <3>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>, <&kp>;
         };
@@ -103,7 +103,7 @@
         td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
-            #binding-cells = <0>;
+            #binding-cells = <4>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>, <&kp>, <&kp>;
         };
