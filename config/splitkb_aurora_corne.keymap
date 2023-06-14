@@ -57,13 +57,13 @@
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
  *  |        |   F1   |   F2   |   F3   |   F4   |  F5    |             |   F6   |   F7   |   F8   |   F9   |   F10  |        |
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
- *  |        |        |        |        |        | PrtSrc |             |  < > % |  @ & # | / \ |  |   F11  |   F12  |        |
+ *  |        |        |        |        |  CAD   | PrtSrc |             |  < > % |  @ & # | / \ |  |   F11  |   F12  |        |
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
  *  |        |        |        |        |        |        |             |        |        |  : ;   | ) ] }  |        |        |
  *  +--------+--------+--------+----+---+----+---+----+---+----+   +----+---+----+---+----+---+----+--------+--------+--------+
  *                                  |        |        |        |   |        |  Lay 2 |        |
  *                                  +--------+--------+--------+   +--------+--------+--------+
- *  Esc  - hold Alt + F4
+ *  CAD - LCtrl + LAlt + Delete
  *
  */
 
@@ -188,7 +188,7 @@
    &kp TAB    &kp Q  &kp W        &kp E        &kp R        &kp T           &mt LC(HU_Z) HU_Z  &kp U       &kp I     &kp O     &kp P     &bspcdl
    &sctd  &kp A  &kp S        &kp D        &kp F        &kp G           &kp H        &kp J       &kp K     &kp L     &sl ACC   &key_repeat
    &sk LCTRL      &kp HU_Y  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B           &kp N        &kp M       &hmesym1  &hmesym2  &hmesym3  &mt LA(F4) ESC
-                                  &kp RALT     &to HME      &kp SPACE       &kp RET      &to MEDNUM  &kp RGUI
+                                  &sk RALT     &to HME      &kp SPACE       &kp RET      &to MEDNUM  &kp RGUI
                         >;
                 };
 
@@ -212,10 +212,10 @@
 
                 miscellaneous_layer {
                         bindings = <
-   ___  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5             &kp F6    &kp F7      &kp F8    &kp F9    &kp F10  ___
-   ___  xxx     xxx     xxx     xxx     &kp PSCRN          &mscsym1  &mscsym2    &mscsym3  &kp F11   &kp F12  ___
-   ___  xxx     xxx     xxx     xxx     xxx                xxx       xxx         &mscsym4  &mscsym5  xxx      ___
-                        ___     ___     ___                ___       &to MEDNUM  ___
+   ___  &kp F1  &kp F2  &kp F3  &kp F4           &kp F5             &kp F6    &kp F7      &kp F8    &kp F9    &kp F10  ___
+   ___  xxx     xxx     xxx     &kp LC(LA(DEL))  &kp PSCRN          &mscsym1  &mscsym2    &mscsym3  &kp F11   &kp F12  ___
+   ___  xxx     xxx     xxx     xxx              xxx                xxx       xxx         &mscsym4  &mscsym5  xxx      ___
+                        ___     ___              ___                ___       &to MEDNUM  ___
                         >;
                 };
             };
