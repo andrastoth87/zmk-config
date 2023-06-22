@@ -197,9 +197,9 @@
                 home_layer {
                         bindings = <
    &kp TAB    &kp Q     &kp W        &kp E        &kp R        &kp T           &mt LC(HU_Z) HU_Z  &kp U       &kp I     &kp O     &kp P     &bspcdl
-   &sctd      &kp A     &kp S        &kp D        &kp F        &kp G           &kp H              &kp J       &kp K     &kp L     &sl ACC   &key_repeat
+   &sk LSHFT     &kp A     &kp S        &kp D        &kp F        &kp G           &kp H              &kp J       &kp K     &kp L     &sl ACC   &key_repeat
    &sk LCTRL  &kp HU_Y  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B           &kp N              &kp M       &hmesym1  &hmesym2  &hmesym3  &mt LA(F4) ESC
-                                     &sk RALT     &to HME      &kp SPACE       &kp RET            &to MEDNUM  &kp RGUI
+                                     &sk LALT     &to HME      &kp SPACE       &kp RET            &to MEDNUM  &kp RGUI
                         >;
                 };
 
