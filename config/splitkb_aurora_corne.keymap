@@ -18,63 +18,120 @@
  * Base layer: 0
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │  Tab   │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │  BckS  │
+ *  │   '    │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │   /    │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │  Shift │  a  A  │  s  S  │  d  D  │  f  F  │  g  G  │             │  h  H  │  j J   │  k K   │  l L   │  Lay 1 │  Rpt   │
+ *  │   =    │  a  A  │  s  S  │  d  D  │  f  F  │  g  G  │             │  h  H  │  j J   │  k K   │  l L   │   (    │   [    │
+ *  │        │  Win   │  Alt   │  Ctrl  │  Shift │        │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │  Ctrl  │  y  Y  │  x  X  │  c  C  │  v  V  │  b  B  │             │  n  N  │  m  M  │ . , ? !│ ( [ {  │_ = ' " │  Esc   │
+ *  │   <    │  y  Y  │  x  X  │  c  C  │  v  V  │  b  B  │             │  n  N  │  m  M  │   ,    │   .    │   -    │   {    │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │ R Alt  │ Lay 0  │ Space  │             │ Enter  │  Lay 2 │   Win  │
+ *                             │  Esc   │  Tab   │ Space  │             │  Enter │  BckS  │  Del   │
+ *                             │  Acc   │  Nav   │ Media  │             │  Sym   │  Num   │  Func  │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
-
- *  Shift  - two taps Caps Lock
- *  x  - hold Ctrl + x
- *  c  - hold Ctrl + c
- *  v  - hold Ctrl + v
- *  z  - hold Ctrl + Z
- *  Esc  - hold Alt + F4
- *  Backspace  - Shift + Backspace = Delete
+ *
  ******************************************************************************************************************************
  * Accent layer: 1
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │        │        │        │  é  É  │        │        │             │  ú  Ú  │  ü  Ü  │  í  Í  │  ö  Ö  │  ő  Ő  │        │
+ *  │        │        │        │        │        │        │             │        │  ú  Ú  │  ü  Ü  │  ű  Ű  │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │        │  á  Á  │        │        │        │        │             │        │  ű  Ű  │        │  ó  Ó  │        │        │
+ *  │        │  Win   │  Alt   │  Ctrl  │  Shift │        │             │        │  ó  Ó  │  ö  Ö  │  ő  Ő  │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │        │        │        │        │        │             │        │  é  É  │  á  Á  │  í  Í  │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │        │        │        │             │        │  Lay 2 │        │
+ *                             │        │        │        │             │        │        │        │
+ *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
  *
- *
  ******************************************************************************************************************************
- * Media/numpad layer: 2
+ * Navigation layer: 2
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │        │  BrUp  │  Prev  │  Play  │  Next  │  VUp   │             │   -    │   +    │   7    │   8    │   9    │        │
+ *  │        │        │        │        │        │        │             │  Cut   │  Copy  │  Paste │  Undo  │  Redo  │ Repeat │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │        │ BrDown │  PUp   │   Up   │  PDown │ VDown  │             │   /    │   *    │   4    │   5    │   6    │        │
+ *  │        │  Win   │  Alt   │  Ctrl  │ Shift  │        │             │  Caps  │  Left  │  Down  │   Up   │  Right │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │        │Home/End│  Left  │  Down  │ Right  │  Mute  │             │   .    │   0    │   1    │   2    │   3    │        │
+ *  │        │        │        │        │        │        │             │ Insert │  Home  │ PgDown │  PgUp  │  End   │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │        │        │        │             │        │  Lay 3 │        │
+ *                             │        │        │        │             │  Enter │  BckS  │  Del   │
+ *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
- *  Esc  - hold Alt + F4
  *
  ******************************************************************************************************************************
- * Miscellaneous layer: 3
+ * Media/Mouse layer: 3
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │        │   F1   │   F2   │   F3   │   F4   │  F5    │             │   F6   │   F7   │   F8   │   F9   │   F10  │        │
+ *  │        │        │        │        │        │        │             │  V Up  │  Prev  │  Play  │  Next  │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │        │        │        │        │  CAD   │ PrtSrc │             │  < > % │  @ & # │ / \ |  │   F11  │   F12  │        │
+ *  │        │  Win   │  Alt   │  Ctrl  │ Shift  │        │             │  V Dn  │ Ms Lft │ Ms Dwn │ Ms Up  │ Ms Rght│ Brg Up │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │        │        │        │        │        │        │             │        │        │  : ;   │ ) ] }  │        │        │
+ *  │        │        │        │        │        │        │             │  Mute  │ Scrl L │ Scrl D │ Scrl U │ Scrl R │ Brg Dwn│
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │        │        │        │             │        │  Lay 2 │        │
+ *                             │        │        │        │             │  MB L  │  MB R  │  MB M  │
+ *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
- *  CAD - LCtrl + LAlt + Delete
+ *
+ ******************************************************************************************************************************
+ * Numpad layer: 4
+ ******************************************************************************************************************************
+ *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
+ *  │        │   -    │   7    │   8    │   9    │   /    │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   +    │   4    │   5    │   6    │   *    │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   0    │   1    │   2    │   3    │   %    │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
+ *                             │   ,    │   .    │  Enter │             │        │        │        │
+ *                             │        │        │        │             │        │        │        │
+ *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
+ *
+ ******************************************************************************************************************************
+ * Sym layer: 5
+ ******************************************************************************************************************************
+ *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
+ *  │        │   {    │   =    │   (    │    )   │   [    │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   }    │   !    │   %    │    /   │   ]    │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   ~    │   '    │   "    │    +   │        │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
+ *                             │   <    │    >   │        │             │        │        │        │
+ *                             │        │        │        │             │        │        │        │
+ *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
+ *
+ ******************************************************************************************************************************
+ * Func layer: 6
+ ******************************************************************************************************************************
+ *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
+ *  │        │   F12  │   F7   │   F8   │   F9   │ PrtScn │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   F11  │   F4   │   F5   │   F6   │        │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
+ *  │        │   F10  │   F1   │   F2   │   F3   │        │             │        │        │        │        │        │        │
+ *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
+ *                             │        │        │        │             │        │        │        │
+ *                             │        │        │        │             │        │        │        │
+ *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
  *
  */
 
@@ -82,18 +139,46 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 #include "keys_hu.h"
 
 #define xxx &none
 #define ___ &trans
 
+#define MSMOVE 2500
+#define MSSCRL 15
+
 #define HME 0  // Home
 #define ACC 1  // Accent
-#define MEDNUM 2  // Media and numpad
-#define MSC 3  // Miscellaneous
+#define NAV 2  // Accent
+#define MMO 3  // Media and mouse
+#define NUM 4  // Numpad
+#define SYM 5  // Symbols
+#define FUN 4  // Function
+
+
+&mmv {
+        time-to-max-speed-ms = <500>;
+        acceleration-exponent=<1>;
+};
+&mwh {
+        time-to-max-speed-ms = <2000>;
+        acceleration-exponent=<0>;
+}; 
 
 / {
     behaviors {
+
+        hrm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         sctd: shift_caps_lock_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_LOCK_TOGGLE";
@@ -134,7 +219,7 @@
             bindings = <&kp HOME>, <&kp END>;
         };
 
-        capi: capital_i_acute {
+        cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPITAL_I_ACUTE_MOD";
             #binding-cells = <0>;
@@ -196,37 +281,64 @@
 
                 home_layer {
                         bindings = <
-   &kp TAB    &kp Q     &kp W        &kp E        &kp R        &kp T           &mt LC(HU_Z) HU_Z  &kp U       &kp I     &kp O     &kp P     &bspcdl
-   &sk LSHFT     &kp A     &kp S        &kp D        &kp F        &kp G           &kp H              &kp J       &kp K     &kp L     &sl ACC   &key_repeat
-   &sk LCTRL  &kp HU_Y  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B           &kp N              &kp M       &hmesym1  &hmesym2  &hmesym3  &mt LA(F4) ESC
-                                     &sk LALT     &to HME      &kp SPACE       &kp RET            &to MEDNUM  &kp RGUI
+   xxx  &kp HU_Q        &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           xxx
+   xxx  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  xxx
+   xxx  &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       xxx
+                                           &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
 
                 accent_layer {
                         bindings = <
-   ___  ___             ___  &kp HU_E_ACUTE  ___      ___          &kp  HU_U_ACUTE  &kp HU_U_UMLAUT        &capi  &kp HU_O_UMLAUT  &kp HU_O_DOUBLE_ACUTE  ___
-   ___  &kp HU_A_ACUTE  ___  ___             ___      ___          ___              &kp HU_U_DOUBLE_ACUTE  ___    &kp HU_O_ACUTE   ___                    ___
-   ___  ___             ___  ___             ___      ___          ___              ___                    ___    ___              ___                    ___
-                             ___             ___      ___          ___              &to MEDNUM             ___
+   xxx  xxx       xxx       xxx        xxx         xxx          xxx  &kp HU_U_ACUTE   &kp HU_U_UMLAUT  &kp HU_U_DOUBLE_ACUTE  xxx  xxx
+   xxx  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  xxx          xxx  &kp HU_O_ACUTE   &kp HU_O_UMLAUT  &kp HU_O_DOUBLE_ACUTE  xxx  xxx
+   xxx  xxx       xxx       xxx        xxx         xxx          xxx  &kp HU_E_ACUTE   &kp HU_A_ACUTE   &cap_i                 xxx  xxx
+                            xxx        xxx         xxx          xxx                   xxx              xxx
                         >;
                 };
 
-                media_numpad_layer {
+                navigation_layer {
                         bindings = <
-   ___  &kp C_BRI_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_VOL_UP          &kp KP_SUBTRACT  &kp KP_PLUS      &kp HU_N7  &kp HU_N8  &kp HU_N9  ___
-   ___  &kp C_BRI_DN  &kp PG_UP   &kp UP    &kp PG_DN   &kp C_VOL_DN          &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp HU_N4  &kp HU_N5  &kp HU_N6  ___
-   ___  &mednumhe     &kp LEFT    &kp DOWN  &kp RIGHT   &kp C_MUTE            &kp KP_DOT       &kp HU_N0        &kp HU_N1  &kp HU_N2  &kp HU_N3  ___
-                                  ___       ___         ___                   ___              &to MSC          ___
+   xxx  xxx       xxx       xxx        xxx         xxx          &kp LC(HU_X)  &kp LC(HU_C)  &kp LC(HU_V)  &kp LC(HU_Z)  &kp LC(LS(HU_Z))  &key_repeat
+   xxx  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  xxx          &kp CAPSLOCK  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT         xxx
+   xxx  xxx       xxx       xxx        xxx         xxx          &kp INSERT    &kp HOME      &kp PG_DN     &kp PG_UP     &kp END           xxx
+                            xxx        xxx         xxx          &kp RET       &kp BSPC      &kp DEL
                         >;
                 };
 
-                miscellaneous_layer {
+                media_mouse_layer {
                         bindings = <
-   ___  &kp F1  &kp F2  &kp F3  &kp F4           &kp F5             &kp F6    &kp F7      &kp F8    &kp F9    &kp F10  ___
-   ___  xxx     xxx     xxx     &kp LC(LA(DEL))  &kp PSCRN          &mscsym1  &mscsym2    &mscsym3  &kp F11   &kp F12  ___
-   ___  xxx     xxx     xxx     xxx              xxx                xxx       xxx         &mscsym4  &mscsym5  xxx      ___
-                        ___     ___              ___                ___       &to MEDNUM  ___
+   xxx  xxx       xxx       xxx        xxx         xxx          &kp C_VOL_UP  &kp C_PREV                &kp C_PP                  &kp C_NEXT                xxx                      xxx
+   xxx  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  xxx          &kp C_VOL_DN  &mmv MOVE_HOR(-MSMOVE)    &mmv MOVE_VERT(MSMOVE)    &mmv MOVE_VERT(-MSMOVE)   &mmv MOVE_HOR(MSMOVE)    xxx
+   xxx  xxx       xxx       xxx        xxx         xxx          &kp C_MUTE    &mwh SCROLL_HOR(-MSSCRL)  &mwh SCROLL_VERT(-MSSCRL) &mwh SCROLL_VERT(MSSCRL)  &mwh SCROLL_HOR(MSSCRL)  xxx
+                            xxx        xxx         xxx          &mkp LCLK     &mkp RCLK                 &mkp MCLK
+                        >;
+                };
+
+                numpad_layer {
+                        bindings = <
+   xxx          &kp HU_MINUS  &kp HU_N7  &kp HU_N8     &kp HU_N9      &kp HU_SLASH              xxx         xxx         xxx        xxx       xxx       xxx
+   xxx          &kp HU_PLUS   &kp HU_N4  &kp HU_N5     &kp HU_N6      &kp HU_ASTRK              xxx         &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
+   xxx          &kp HU_N0     &kp HU_N1  &kp HU_N2     &kp HU_N3      &kp HU_PRCNT              xxx         xxx         xxx        xxx       xxx       xxx
+                                         &kp HU_COMMA  &kp HU_PERIOD  &kp RET                   xxx         xxx         xxx
+                        >;
+                };
+
+                symbols_layer {
+                        bindings = <
+   xxx          xxx       xxx       xxx        xxx         xxx          xxx         xxx         xxx        xxx       xxx       xxx
+   xxx          xxx       xxx       xxx        xxx         xxx          xxx         &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
+   xxx          xxx       xxx       xxx        xxx         xxx          xxx         xxx         xxx        xxx       xxx       xxx
+                                    xxx        xxx         xxx          xxx         xxx         xxx
+                        >;
+                };
+
+                function_layer {
+                        bindings = <
+   xxx          &kp F12       &kp F7       &kp F8        &kp F9         &kp PSCRN          xxx         xxx         xxx        xxx       xxx       xxx
+   xxx          &kp F11       &kp F4       &kp F5        &kp F6         xxx                xxx         &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
+   xxx          &kp F10       &kp F1       &kp F2        &kp F3         xxx                xxx         xxx         xxx        xxx       xxx       xxx
+                                           xxx           xxx            xxx                xxx         xxx         xxx
                         >;
                 };
             };
