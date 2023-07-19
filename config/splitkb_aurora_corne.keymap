@@ -174,7 +174,7 @@
     hrm_##NAME: hrm_##NAME { \
         compatible = "zmk,behavior-hold-tap"; \
         label = #NAME; \
-        #binding-cells = <0>; \
+        #binding-cells = <2>; \
         flavor = "balanced"; \
         tapping-term-ms = <280>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
