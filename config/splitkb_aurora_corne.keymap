@@ -170,7 +170,7 @@
         mods = <(MOD_LSFT|MOD_RSFT)>; \
     };
 
-#define HOME_ROW_MOD(NAME, HOLD, TAP, TRIGGER_POS) \
+#define HOME_ROW_MOD(NAME, TRIGGER_POS) \
     hrm_##NAME: hrm_##NAME { \
         compatible = "zmk,behavior-hold-tap"; \
         label = #NAME; \
@@ -179,7 +179,7 @@
         tapping-term-ms = <280>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
         global-quick-tap-ms = <150>; \
-        bindings = <&kp HOLD>, <&kp TAP>; \
+        bindings = <&kp>, <&kp>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     };
@@ -220,11 +220,10 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
 
-        HOME_ROW_MOD(l_shft, LSHFT, HU_F, RIGHT_SIDE)
+        HOME_ROW_MOD(l_shft, RIGHT_SIDE)
         HOME_ROW_MOD(l_ctrl, LCTRL, HU_D, RIGHT_SIDE)
         HOME_ROW_MOD(l_alt, LALT, HU_S, RIGHT_SIDE)
         HOME_ROW_MOD(l_gui, LGUI, HU_A, RIGHT_SIDE)
-
 
         HOME_ROW_MOD(r_shft, RSHFT, HU_J, LEFT_SIDE)
         HOME_ROW_MOD(r_ctrl, RCTRL, HU_K, LEFT_SIDE)
@@ -254,7 +253,7 @@
                 home_layer {
                         bindings = <
    &mm_lt  &kp HU_Q    &kp HU_W    &kp HU_E     &kp HU_R     &kp HU_T                   &kp HU_Z     &kp HU_U      &kp HU_I      &kp HU_O    &kp HU_P      &mm_rt
-   &mm_lm  &hrm_l_gui  &hrm_l_alt  &hrm_l_ctrl  &hrm_l_shft  &kp HU_G                   &kp HU_H     &hrm_r_shft   &hrm_r_ctrl   &hrm_r_alt  &hrm_r_gui    &mm_rm
+   &mm_lm  &hrm_l_gui  &hrm_l_alt  &hrm_l_ctrl  &hrm_l_shft LSHFT HU_F  &kp HU_G                   &kp HU_H     &hrm_r_shft   &hrm_r_ctrl   &hrm_r_alt  &hrm_r_gui    &mm_rm
    &mm_lb  &kp HU_Y    &kp HU_X    &kp HU_C     &kp HU_V     &kp HU_B                   &kp HU_N     &kp HU_M      &kp HU_COMMA  &kp HU_DOT  &kp HU_MINUS  &mm_rb
                                    &lt ACC ESC  &lt NAV TAB  &lt MMO HU_SPACE           &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
                         >;
