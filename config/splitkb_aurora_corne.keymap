@@ -177,7 +177,7 @@
         quick-tap-ms = <QUICK_TAP_MS>; \
         global-quick-tap-ms = <150>; \
         bindings = <HOLD>, <TAP>; \
-        hold-trigger-key-positions = <TRIGGER_POS>; \
+        hold-trigger-key-positions = TRIGGER_POS; \
         hold-trigger-on-release; \
     };
 
@@ -217,16 +217,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
 
-        HOME_ROW_MOD(l_shft, LSHFT, HU_F, 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41)
-        HOME_ROW_MOD(l_ctrl, LCTRL, HU_D, 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41)
-        HOME_ROW_MOD(l_alt, LALT, HU_S, 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41)
-        HOME_ROW_MOD(l_gui, LGUI, HU_A, 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41)
+        HOME_ROW_MOD(l_shft, LSHFT, HU_F, <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>)
+        HOME_ROW_MOD(l_ctrl, LCTRL, HU_D, <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>)
+        HOME_ROW_MOD(l_alt, LALT, HU_S, <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>)
+        HOME_ROW_MOD(l_gui, LGUI, HU_A, <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>)
 
 
-        HOME_ROW_MOD(r_shft, RSHFT, HU_J, 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38)
-        HOME_ROW_MOD(r_ctrl, RCTRL, HU_K, 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38)
-        HOME_ROW_MOD(r_alt, RALT, HU_L, 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38)
-        HOME_ROW_MOD(r_gui, RGUI, HU_LPAR, 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38)
+        HOME_ROW_MOD(r_shft, RSHFT, HU_J, <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>)
+        HOME_ROW_MOD(r_ctrl, RCTRL, HU_K, <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>)
+        HOME_ROW_MOD(r_alt, RALT, HU_L, <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>)
+        HOME_ROW_MOD(r_gui, RGUI, HU_LPAR, <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>)
 
         MOD_MORPH(lt, HU_DQT, HU_SEMI)
         MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
