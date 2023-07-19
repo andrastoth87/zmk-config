@@ -191,9 +191,9 @@
         MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
         MOD_MORPH(lb, HU_GT, HU_LT)
 
-        MOD_MORPH(rt, HU_SLASH, KP_SLASH)
+        MOD_MORPH(rt, KP_SLASH, HU_HASH)
         MOD_MORPH(rm, HU_LBKT, HU_SQT)
-        MOD_MORPH(rb, HU_PLUS, HU_LBKT)
+        MOD_MORPH(rb, HU_PLUS, HU_LBRC)
 
         cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
@@ -202,7 +202,7 @@
             bindings = <&kp HU_I_ACUTE>, <&kp HU_I_ACUTE_CAP>;
             mods = <(MOD_LSFT)>;
         };
-    };
+    };///////
 
         keymap {
                 compatible = "zmk,keymap";
