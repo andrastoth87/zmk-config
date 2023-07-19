@@ -169,7 +169,7 @@
 
 #define HOME_ROW_MOD(NAME, HOLD, TAP, TRIGGER_POS) \
     hrm_##NAME: hrm_##NAME { \
-        compatible = "zmk,behavior-hold-tap";
+        compatible = "zmk,behavior-hold-tap"; \
         label = #NAME; \
         #binding-cells = <0>; \
         flavor = "balanced"; \
@@ -182,13 +182,14 @@
     };
 
 &mmv {
-        time-to-max-speed-ms = <500>;
-        acceleration-exponent=<1>;
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent=<1>;
 };
+
 &mwh {
-        time-to-max-speed-ms = <2000>;
-        acceleration-exponent=<0>;
-}; 
+    time-to-max-speed-ms = <2000>;
+    acceleration-exponent=<0>;
+};
 
 / {
     behaviors {
