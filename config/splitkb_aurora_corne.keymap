@@ -165,7 +165,13 @@
     mods = <(MOD_LSFT|MOD_RSFT)>; \
   };
 
+MOD_MORPH(lt HU_DQT, HU_SEMI)
+MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
+MOD_MORPH(lb, HU_GT, HU_LT)
 
+MOD_MORPH(rt, HU_SLASH, HU_HASH)
+MOD_MORPH(rm, HU_LBKT, HU_SQT)
+MOD_MORPH(rb, HU_PLUS, HU_LBKT)
 
 &mmv {
         time-to-max-speed-ms = <500>;
@@ -178,7 +184,6 @@
 
 / {
     behaviors {
-
         hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -189,14 +194,6 @@
             flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
-
-        MOD_MORPH(lt HU_DQT, HU_SEMI)
-        MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
-        MOD_MORPH(lb, HU_GT, HU_LT)
-
-        MOD_MORPH(rt, HU_SLASH, HU_HASH)
-        MOD_MORPH(rm, HU_LBKT, HU_SQT)
-        MOD_MORPH(rb, HU_PLUS, HU_LBKT)
 
         cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
