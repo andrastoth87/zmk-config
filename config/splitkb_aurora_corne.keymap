@@ -190,13 +190,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        MOD_MORPH("0", HU_DQT, HU_SEMI)
-        MOD_MORPH("12", HU_EQUAL, HU_ASTRK)
-        MOD_MORPH("24", HU_GT, HU_LT)
+        MOD_MORPH(0 HU_DQT, HU_SEMI)
+        MOD_MORPH(12, HU_EQUAL, HU_ASTRK)
+        MOD_MORPH(24, HU_GT, HU_LT)
 
-        MOD_MORPH("11", HU_SLASH, HU_HASH)
-        MOD_MORPH("23", HU_LBKT, HU_SQT)
-        MOD_MORPH("35", HU_PLUS, HU_LBKT)
+        MOD_MORPH(11, HU_SLASH, HU_HASH)
+        MOD_MORPH(23, HU_LBKT, HU_SQT)
+        MOD_MORPH(35, HU_PLUS, HU_LBKT)
 
         cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
