@@ -176,7 +176,7 @@
 
 / {
     behaviors {
-        hrm: homerow_mods {
+        lhrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -185,6 +185,19 @@
             global-quick-tap;
             flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+
+        rhrm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <200>;
+            global-quick-tap;
+            flavor = "tap-unless-interrupted";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
         MOD_MORPH(lt, HU_DQT, HU_SEMI)
@@ -202,17 +215,17 @@
             bindings = <&kp HU_I_ACUTE>, <&kp HU_I_ACUTE_CAP>;
             mods = <(MOD_LSFT)>;
         };
-    };///////
+    };
 
         keymap {
                 compatible = "zmk,keymap";
 
                 home_layer {
                         bindings = <
-   &mm_lt   &kp HU_Q       &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           &mm_rt
-   &mm_lm  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  &mm_rm
-   &mm_lb  &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       &mm_rb
-                                              &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC     &lt FUN DEL
+   &mm_lt  &kp HU_Q         &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U          &kp HU_I          &kp HU_O         &kp HU_P            &mm_rt
+   &mm_lm  &lhrm LGUI HU_A  &lhrm LALT HU_S    &lhrm LCTRL HU_D   &lhrm LSHFT HU_F   &kp HU_G                   &kp HU_H           &rhrm RSHFT HU_J  &rhrm RCTRL HU_K  &rhrm RALT HU_L  &rhrm RGUI HU_LPAR  &mm_rm
+   &mm_lb  &kp HU_Y         &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M          &kp HU_COMMA      &kp HU_DOT       &kp HU_MINUS        &mm_rb
+                                               &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC      &lt FUN DEL
                         >;
                 };
 
