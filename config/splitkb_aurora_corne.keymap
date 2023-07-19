@@ -190,13 +190,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        MOD_MORPH(0 HU_DQT, HU_SEMI)
-        MOD_MORPH(12, HU_EQUAL, HU_ASTRK)
-        MOD_MORPH(24, HU_GT, HU_LT)
+        MOD_MORPH(lt HU_DQT, HU_SEMI)
+        MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
+        MOD_MORPH(lb, HU_GT, HU_LT)
 
-        MOD_MORPH(11, HU_SLASH, HU_HASH)
-        MOD_MORPH(23, HU_LBKT, HU_SQT)
-        MOD_MORPH(35, HU_PLUS, HU_LBKT)
+        MOD_MORPH(rt, HU_SLASH, HU_HASH)
+        MOD_MORPH(rm, HU_LBKT, HU_SQT)
+        MOD_MORPH(rb, HU_PLUS, HU_LBKT)
 
         cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
@@ -212,9 +212,9 @@
 
                 home_layer {
                         bindings = <
-   &mm_0   &kp HU_Q        &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           &mm_11
-   &mm_12  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  &mm_23
-   &mm_24  &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       &mm_35
+   &mm_lt   &kp HU_Q       &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           &mm_rt
+   &mm_lm  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  &mm_rm
+   &mm_mb  &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       &mm_rb
                                               &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
