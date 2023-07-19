@@ -18,14 +18,14 @@
  * Base layer: 0
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │   '    │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │   /    │
- *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  │   "    │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │   /    │
+ *  │   ;    │        │        │        │        │        │             │        │        │        │        │        │   #    │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
  *  │   =    │  a  A  │  s  S  │  d  D  │  f  F  │  g  G  │             │  h  H  │  j J   │  k K   │  l L   │   (    │   [    │
- *  │        │  Win   │  Alt   │  Ctrl  │  Shift │        │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
+ *  │   *    │  Win   │  Alt   │  Ctrl  │  Shift │        │             │        │  Shift │  Ctrl  │  Alt   │  Win   │   '    │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │   <    │  y  Y  │  x  X  │  c  C  │  v  V  │  b  B  │             │  n  N  │  m  M  │   ,    │   .    │   -    │   {    │
- *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
+ *  │   >    │  y  Y  │  x  X  │  c  C  │  v  V  │  b  B  │             │  n  N  │  m  M  │   ,    │   .    │   -    │   +    │
+ *  │   <    │        │        │        │        │        │             │        │        │   ?    │   :    │   _    │   {    │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
  *                             │  Esc   │  Tab   │ Space  │             │  Enter │  BckS  │  Del   │
  *                             │  Acc   │  Nav   │ Media  │             │  Sym   │  Num   │  Func  │
@@ -129,7 +129,7 @@
  *  │        │   F10  │   F1   │   F2   │   F3   │        │             │        │        │        │        │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │        │        │        │             │        │        │        │
+ *                             │ BltPrv │ BltNxt │ BltClr │             │        │        │        │
  *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
  *
@@ -175,48 +175,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <200>;
-            flavor = "tap-preferred";
+            global-quick-tap;
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
 
-        sctd: shift_caps_lock_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPS_LOCK_TOGGLE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sk LSHFT>, <&caps_word>;
-        };
-
-         hmesym1: tap_dance_home_symbols_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_HOME_SYMBOLS_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_DOT>, <&kp HU_COMMA>, <&kp HU_QMARK>, <&kp HU_EXCL>;
-        };
-
-        hmesym2: tap_dance_home_symbols2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_HOME_SYMBOLS_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_LPAR>, <&kp HU_LBKT>, <&kp HU_LBRC>;
-        };
-
-        hmesym3: tap_dance_home_symbols_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_HOME_SYMBOLS_3";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_UNDER>, <&kp HU_EQUAL>, <&kp HU_SQT>, <&kp HU_DOUBLE_QUOTES>;
-        };
-
-        mednumhe: tap_dance_home_end {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_HOME_END";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HOME>, <&kp END>;
+         mmg: mod-morph-general {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_GENERAL";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         cap_i: capital_i_acute {
@@ -226,65 +195,17 @@
             bindings = <&kp HU_I_ACUTE>, <&kp HU_I_ACUTE_CAP>;
             mods = <(MOD_LSFT)>;
         };
-
-        bspcdl: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        mscsym1: tap_dance_miscellaneous_symbols_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_LT>, <&kp HU_GT>, <&kp HU_PRCNT>;
-        };
-
-        mscsym2: tap_dance_miscellaneous_symbols_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_AT>, <&kp HU_AMPS>, <&kp HU_HASH>;
-        };
-
-        mscsym3: tap_dance_miscellaneous_symbols_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_3";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_FSLH>, <&kp HU_BSLH>, <&kp HU_PIPE>;
-        };
-
-        mscsym4: tap_dance_miscellaneous_symbols_4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_4";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_COLON>, <&kp HU_SEMI>;
-        };
-
-        mscsym5: tap_dance_miscellaneous_symbols_5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MISCELLANEOUS_SYMBOLS_5";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp HU_RPAR>, <&kp HU_RBKT>, <&kp HU_RBRC>;
-        };
-
     };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 home_layer {
                         bindings = <
-   xxx  &kp HU_Q        &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           xxx
-   xxx  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  xxx
-   xxx  &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       xxx
-                                           &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC     &lt FUN DEL
+   &mmg HU_DQT HU_SEMI     &kp HU_Q        &kp HU_W           &kp HU_E           &kp HU_R           &kp HU_T                   &mt LC(HU_Z) HU_Z  &kp HU_U         &kp HU_I         &kp HU_O        &kp HU_P           &mmg HU_SLASH HU_HASH
+   &mmg HU_EQUAL HU_ASTRK  &hrm LGUI HU_A  &hrm LALT HU_S     &hrm LCTRL HU_D    &hrm LSHFT HU_F    &kp HU_G                   &kp HU_H           &hrm RSHFT HU_J  &hrm RCTRL HU_K  &hrm RALT HU_L  &hrm RGUI HU_LPAR  &mmg HU_LBKT HU_SQT
+   &mmg HU_GT HU_LT        &kp HU_Y        &mt LC(HU_X) HU_X  &mt LC(HU_C) HU_C  &mt LC(HU_V) HU_V  &kp HU_B                   &kp HU_N           &kp HU_M         &kp HU_COMMA     &kp HU_DOT      &kp HU_MINUS       &mmg HU_PLUS HU_LBKT
+                                                              &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET        &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
 
