@@ -186,9 +186,9 @@
 
 #define COMBO(NAME, OUTPUT_KEY, TRIGGER_POS) \
     combo_##NAME { \
-        timeout-ms = <50>;
-        key-positions = <TRIGGER_POS>;
-        bindings = <OUTPUT_KEY>;
+        timeout-ms = <50>; \
+        key-positions = <TRIGGER_POS>; \
+        bindings = <OUTPUT_KEY>; \
     };
 
 &mmv {
