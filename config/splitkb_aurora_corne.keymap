@@ -227,10 +227,10 @@
      combos {
         compatible = "zmk,combos";
 
-        COMBO(cut, &kp LCTRL(HU_X), 25 26)
-        COMBO(copy, &kp LCTRL(HU_C), 26 27)
-        COMBO(paste, &kp LCTRL(HU_V), 27 28)
-        COMBO(undo, &kp LCTRL(HU_Z), 6 7)
+        COMBO(cut, &kp LC(HU_X), 25 26)
+        COMBO(copy, &kp LC(HU_C), 26 27)
+        COMBO(paste, &kp LC(HU_V), 27 28)
+        COMBO(undo, &kp LC(HU_Z), 6 7)
     };
 
         keymap {
