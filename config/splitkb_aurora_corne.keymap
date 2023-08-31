@@ -95,7 +95,7 @@
  *  │        │   0    │   1    │   2    │   3    │   %    │             │        │        │        │        │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │   ,    │   .    │  Enter │             │        │  BckS  │        │
+ *                             │   ,    │   .    │  Enter │             │        │        │        │
  *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
  *
@@ -112,7 +112,7 @@
  *  │    |   │   *    │   '    │   "    │    +   │   &    │             │        │        │        │        │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
- *                             │   <    │    >   │   @    │             │  Enter │  BckS  │  Del   │
+ *                             │   <    │    >   │   @    │             │        │        │        │
  *                             │        │        │        │             │        │        │        │
  *                             ╰────────┴────────┴────────╯             ╰────────┴────────┴────────╯
  *
@@ -277,7 +277,7 @@
    xxx  &kp HU_MINUS  &kp HU_N7  &kp HU_N8     &kp HU_N9      &kp HU_SLASH         xxx  xxx         xxx        xxx       xxx       xxx
    xxx  &kp HU_PLUS   &kp HU_N4  &kp HU_N5     &kp HU_N6      &kp HU_ASTRK         xxx  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
    xxx  &kp HU_N0     &kp HU_N1  &kp HU_N2     &kp HU_N3      &kp HU_PRCNT         xxx  xxx         xxx        xxx       xxx       xxx
-                                 &kp HU_COMMA  &kp HU_PERIOD  &kp RET              xxx  &kp BSPC    xxx
+                                 &kp HU_COMMA  &kp HU_PERIOD  &kp RET              xxx  xxx         xxx
                         >;
                 };
 
@@ -286,7 +286,7 @@
    &kp HU_LBRC  &kp HU_RBRC   &kp HU_EQUAL  &kp HU_LPAR   &kp HU_RPAR   &kp HU_LBKT         xxx      xxx         xxx        xxx       xxx       xxx
    &kp HU_BSLH  &kp HU_QMARK  &kp HU_EXCL   &kp HU_PRCNT  &kp HU_SLASH  &kp HU_RBKT         xxx      &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
    &kp HU_PIPE  &kp HU_STAR   &kp HU_SQT    &kp HU_DQT    &kp HU_PLUS   &kp HU_AMPS         xxx      xxx         xxx        xxx       xxx       xxx
-                                            &kp HU_LT     &kp HU_GT     &kp HU_AT           &kp RET  &kp BSPC    &kp DEL
+                                            &kp HU_LT     &kp HU_GT     &kp HU_AT           xxx      xxx         xxx
                         >;
                 };
 
