@@ -18,14 +18,14 @@
  * Base layer: 0
  ******************************************************************************************************************************
  *  ╭────────┬────────┬────────┬────────┬────────┬────────╮             ╭────────┬────────┬────────┬────────┬────────┬────────╮
- *  │   ;    │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │   /    │
+ *  │   ?    │  q  Q  │  w  W  │  e  E  │  r  R  │  t  T  │             │  z  Z  │  u  U  │  i  I  │  o  O  │  p  P  │   /    │
  *  │   "    │        │        │        │        │        │             │        │        │        │        │        │   #    │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
  *  │   =    │  a  A  │  s  S  │  d  D  │  f  F  │  g  G  │             │  h  H  │  j J   │  k K   │  l L   │   (    │   [    │
  *  │   *    │  Win   │  Alt   │  Ctrl  │  Shift │        │             │        │  Shift │  Ctrl  │  Alt   │  Win   │   '    │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
  *  │   <    │  y  Y  │  x  X  │  c  C  │  v  V  │  b  B  │             │  n  N  │  m  M  │   ,    │   .    │   -    │   +    │
- *  │   >    │        │        │        │        │        │             │        │        │   ?    │   :    │   _    │   {    │
+ *  │   >    │        │        │        │        │        │             │        │        │   ;    │   :    │   _    │   {    │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
  *                             │  Esc   │  Tab   │ Space  │             │  Enter │  BckS  │  Del   │
  *                             │  Acc   │  Nav   │ Media  │             │  Sym   │  Num   │  Func  │
@@ -106,10 +106,10 @@
  *  │    {   │   }    │   =    │   (    │    )   │   [    │             │        │        │        │        │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │    \   │   ?    │   !    │   %    │    /   │   ]    │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
+ *  │    \   │   ~    │   !    │   %    │    /   │   ]    │             │        │  Shift │  Ctrl  │  Alt   │  Win   │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ├────────┼────────┼────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┼────────┼────────┤
- *  │    |   │   *    │   '    │   "    │    +   │   &    │             │        │        │        │        │        │        │
+ *  │    |   │   $    │   '    │   "    │    +   │   &    │             │        │        │        │        │        │        │
  *  │        │        │        │        │        │        │             │        │        │        │        │        │        │
  *  ╰────────┴────────┴────────┼────────┼────────┼────────┤             ├────────┼────────┼────────┼────────┴────────┴────────╯
  *                             │   <    │    >   │   @    │             │        │        │        │
@@ -207,13 +207,15 @@
 
         HOME_ROW_MOD(r, LEFT_SIDE)
 
-        MOD_MORPH(lt, HU_SEMI, HU_DQT)
+        MOD_MORPH(lt, HU_QMARK, HU_DQT)
         MOD_MORPH(lm, HU_EQUAL, HU_ASTRK)
         MOD_MORPH(lb, HU_LT, HU_GT)
 
         MOD_MORPH(rt, KP_SLASH, HU_HASH)
         MOD_MORPH(rm, HU_LBKT, HU_SQT)
         MOD_MORPH(rb, HU_PLUS, HU_LBRC)
+
+        MOD_MORPH(comma, HU_COMMA, HU_SEMI)
 
         cap_i: capital_i_acute {
             compatible = "zmk,behavior-mod-morph";
@@ -284,8 +286,8 @@
                 symbols_layer {
                         bindings = <
    &kp HU_LBRC  &kp HU_RBRC   &kp HU_EQUAL  &kp HU_LPAR   &kp HU_RPAR   &kp HU_LBKT         xxx      xxx         xxx        xxx       xxx       xxx
-   &kp HU_BSLH  &kp HU_QMARK  &kp HU_EXCL   &kp HU_PRCNT  &kp HU_SLASH  &kp HU_RBKT         xxx      &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
-   &kp HU_PIPE  &kp HU_STAR   &kp HU_SQT    &kp HU_DQT    &kp HU_PLUS   &kp HU_AMPS         xxx      xxx         xxx        xxx       xxx       xxx
+   &kp HU_BSLH  &kp HU_TILDE  &kp HU_EXCL   &kp HU_PRCNT  &kp HU_SLASH  &kp HU_RBKT         xxx      &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  xxx
+   &kp HU_PIPE  &kp HU_DLLR   &kp HU_SQT    &kp HU_DQT    &kp HU_PLUS   &kp HU_AMPS         xxx      xxx         xxx        xxx       xxx       xxx
                                             &kp HU_LT     &kp HU_GT     &kp HU_AT           xxx      xxx         xxx
                         >;
                 };
