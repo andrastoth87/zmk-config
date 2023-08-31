@@ -242,7 +242,7 @@
                         bindings = <
    &mm_lt  &kp HU_Q          &kp HU_W          &kp HU_E           &kp HU_R           &kp HU_T                   &kp HU_Z     &kp HU_U           &kp HU_I           &kp HU_O          &kp HU_P             &mm_rt
    &mm_lm  &hrm_l LGUI HU_A  &hrm_l LALT HU_S  &hrm_l LCTRL HU_D  &hrm_l LSHFT HU_F  &kp HU_G                   &kp HU_H     &hrm_r RSHFT HU_J  &hrm_r RCTRL HU_K  &hrm_r RALT HU_L  &hrm_r RGUI HU_LPAR  &mm_rm
-   &mm_lb  &kp HU_Y          &kp HU_X          &kp HU_C           &kp HU_V           &kp HU_B                   &kp HU_N     &kp HU_M           &kp HU_COMMA       &kp HU_DOT        &kp HU_MINUS         &mm_rb
+   &mm_lb  &kp HU_Y          &kp HU_X          &kp HU_C           &kp HU_V           &kp HU_B                   &kp HU_N     &kp HU_M           &mm_comma          &kp HU_DOT        &kp HU_MINUS         &mm_rb
                                                &lt ACC ESC        &lt NAV TAB        &lt MMO HU_SPACE           &lt SYM RET  &lt NUM BSPC       &lt FUN DEL
                         >;
                 };
